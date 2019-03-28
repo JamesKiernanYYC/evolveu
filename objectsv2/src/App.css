@@ -1,0 +1,258 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+/* This is the styling for the NavBar */
+.NavBar {
+  background-color: #AEB3B7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  border-radius: 10px;
+  
+}
+.logo:hover {
+  margin: 10px;
+  width: 110px;
+  height: 110px;
+  background-color: lightsteelblue;
+}
+.logo {
+  margin: 15px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.logo-custom {
+  margin: 15px;
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  border-radius: 100%;
+  animation: App-logo-spin infinite 20s linear;
+}
+.logo-custom:hover {
+  margin: 10px;
+  width: 130px;
+  height: 130px;
+  background-color: lightsteelblue;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+.Calc-logo {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* This is the styling for the main react page */
+.App-header {
+  background-color: #282c34;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: 0px;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* This is the Calculator styling */
+.calculator {
+  background-color: #282c34;
+}
+.title {
+  color: white;
+}
+.calcBtn {
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  background-color: #00d8ff;
+  margin: 3px;
+  border: none;
+  text-shadow: black;
+}
+.calcBtnFunc {
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  background-color: rbg(171, 226, 242);
+  margin: 3px;
+  border: none;
+  text-shadow: black;
+}
+.calcBtnFunc:hover {
+  background-color: rgba(228, 228, 228, 0.6);
+  color: white;
+  cursor: pointer;
+}
+.calcBtn:hover {
+  background-color: rgba(228, 228, 228, 0.6);
+  color: white;
+  cursor: pointer;
+}
+.clear {
+  border-radius: 5px;
+  width: 297px;
+  height: 50px;
+  background-color: rbg(171, 226, 242);
+  margin: 3px;
+  border: none;
+  text-shadow: black;
+}
+.clear:hover {
+  background-color: rgba(228, 228, 228, 0.6);
+  color: white;
+  cursor: pointer;
+}
+.inp {
+  width: 300px;
+  height: 50px;
+  margin: 10px;
+  text-align: center;
+  border-radius:5px;
+  color: white;
+  background-color:rgba(211, 205, 205, 0.1);
+  border: none;
+}
+.inp:hover {
+  background-color:rgba(211, 205, 205, 0.2);
+}
+
+
+/* This is the styling for the Accounts Form */
+.accForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.accInpField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.depField {
+  display: flex;
+}
+.placeholder {
+  text-align: center;
+}
+.accInp {
+  background-color:rgba(211, 205, 205, 0.1);
+  border: none;
+  width: 300px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px;
+  color: white;
+}
+.accInp:hover {
+  background-color: rgba(211, 205, 205, 0.2);
+}
+.accBtn {
+  background-color: #00d8ff;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 90px;
+
+}
+.accBtnCreate {
+  background-color: #00d8ff;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: fit-content;
+}
+.accBtnCreate:hover {
+  background-color: rgba(228, 228, 228, 0.6);
+  cursor: pointer;
+}
+.accBtn:hover {
+  background-color: rgba(228, 228, 228, 0.6);
+  cursor: pointer;
+}
+.accContainer {
+  width: 98.9%;
+  height: 300px;
+  border: 5px solid white;
+}
+.accHolderInfo {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 55px;
+}
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.accHolderInfo {
+  display: flex;
+  justify-content: flex-start;
+}
+.accounts {
+  display:  flex;
+  justify-content: flex-start;
+  height: 55px;
+
+}
+.accName {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.accBal {
+margin-right: 30em;
+margin-left: 20px;
+}
+.accBtnAcc {
+  background-color: #00d8ff;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 75px;
+  margin-left: 10px;
+}
+
+
+/* This is the styling for unknown page */
+.constPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.constGif {
+  height: 600px;
+  margin: 40px;
+}

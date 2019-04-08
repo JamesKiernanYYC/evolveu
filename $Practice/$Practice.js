@@ -114,6 +114,7 @@ console.log(largeBalances);
 assertEquals(largeBalances[0].fname, "Liam");
 assertEquals(largeBalances[1].fname, "Emma");
 
+<<<<<<< HEAD
 let people = [
     {fname:"Alex", lname:"Smith", province:"BC", age:33},
     {fname:"Angela", lname:"Jones", province:"AB", age:61},
@@ -170,3 +171,7 @@ console.log("filter by age", processPeople)
 // function as an anonymous function
 //
 
+=======
+
+//test
+>>>>>>> 4dd709bed7f4f92b477dcca881b9972edcd3bb6c

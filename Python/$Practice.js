@@ -164,5 +164,11 @@ let people = [
 const processProvince = people.filter(a => a.province === "AB" || a.province === "BC")
 const processPeople = processProvince.filter(a => a.age < 25)
 
-console.log("filter by age", processPeople)
-
+console.log("filter by age", processPeople) 
+if (true) {
+	return 0
+} else if (false) {
+	return 1
+} else if (null) {
+	return 2
+}

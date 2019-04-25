@@ -1,0 +1,54 @@
+.CitysCompMain {
+    color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: inline-block;
+    flex-direction: column;
+}
+.cityInp {
+    width: 300px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius:5px;
+    color: white;
+    background-color:rgba(211, 205, 205, 0.1);
+    border: none;
+    font-size: 25px;
+}
+.inpContainer {
+    width: 900px;
+    height: 100px;
+    display: inline-block;
+}
+.cityBtn {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: #00d8ff;
+    margin-right: 3px;
+    border: none;
+    text-shadow: black;
+    height: 30px;
+    width: 90px;
+}
+.cityCard {
+    margin-top: 10px;
+    border: 2px solid white;
+    height: 160px;
+    border-radius: 10px;
+}
+.cityInfo { 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cityBtn:hover {
+    background-color: rgba(228, 228, 228, 0.6);
+    color: white;
+    cursor: pointer;
+}
+.cityInp:hover {
+    background-color:rgba(211, 205, 205, 0.2);
+  }

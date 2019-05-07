@@ -1,0 +1,31 @@
+There are 303 lines in census.csv
+
+------------------RES_CNT by CLASS---------------
+
+Total Residents in Residential: 1263734
+
+Total Residents in Residual Sub Area: 2580
+
+Total Residents in Industrial: 922
+
+Total Residents in Major Park: 0
+
+
+------------------RES_CNT by SECTOR---------------
+
+Total Residents in SOUTH: 227421
+
+Total Residents in EAST: 58405
+
+Total Residents in NORTHEAST: 185562
+
+Total Residents in NORTH: 160576
+
+Total Residents in CENTRE: 199977
+
+Total Residents in NORTHWEST: 175448
+
+Total Residents in SOUTHEAST: 135314
+
+Total Residents in WEST: 124533
+

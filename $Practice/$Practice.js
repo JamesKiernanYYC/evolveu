@@ -114,7 +114,6 @@ console.log(largeBalances);
 assertEquals(largeBalances[0].fname, "Liam");
 assertEquals(largeBalances[1].fname, "Emma");
 
-<<<<<<< HEAD
 let people = [
     {fname:"Alex", lname:"Smith", province:"BC", age:33},
     {fname:"Angela", lname:"Jones", province:"AB", age:61},
@@ -163,6 +162,30 @@ let people = [
 ];
 const processProvince = people.filter(a => a.province === "AB" || a.province === "BC")
 const processPeople = processProvince.filter(a => a.age < 25)
-
 console.log("filter by age", processPeople)
 
+let avgAge = () => {
+	let temp = people.filter(a => a.province === "AB" || a.province === "BC")
+	let newReducer = (accumulator, currentValue) => accumulator + currentValue.age
+    totalAge = temp.reduce(newReducer, 0)
+    totalAge = totalAge / temp.length
+    return Math.round(totalAge)
+}
+let totalPeople = () => {
+	total = people.length
+	return total
+}
+let totalAge = () => {
+	const reducer = (accumulator, currentValue) => accumulator + currentValue.age
+    total = people.reduce(reducer, 0)
+    return total
+}
+
+
+const determineTotal = () => {
+	console.log(`There are ${totalPeople()} people in the array`)
+	console.log(`The total age of everyone in the array is ${totalAge()}`)
+	console.log(`the average age in BC and AB is: ${avgAge()}`)	
+}
+
+determineTotal()

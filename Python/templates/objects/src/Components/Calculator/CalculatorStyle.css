@@ -1,0 +1,67 @@
+.calculator {
+    background-color: #282c34;
+    min-height: 100vh;
+  }
+  .title {
+    color: white;
+  }
+  .calcBtn {
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    background-color: #00d8ff;
+    margin: 3px;
+    border: none;
+    text-shadow: black;
+  }
+  .calcBtnFunc {
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    background-color: rbg(171, 226, 242);
+    margin: 3px;
+    border: none;
+    text-shadow: black;
+  }
+  .calcBtnFunc:hover {
+    background-color: rgba(228, 228, 228, 0.6);
+    color: white;
+    cursor: pointer;
+  }
+  .calcBtn:hover {
+    background-color: rgba(228, 228, 228, 0.6);
+    color: white;
+    cursor: pointer;
+  }
+  .clear {
+    border-radius: 5px;
+    width: 297px;
+    height: 50px;
+    background-color: rbg(171, 226, 242);
+    margin: 3px;
+    border: none;
+    text-shadow: black;
+  }
+  .clear:hover {
+    background-color: rgba(228, 228, 228, 0.6);
+    color: white;
+    cursor: pointer;
+  }
+  .inp {
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius:5px;
+    color: white;
+    background-color:rgba(211, 205, 205, 0.1);
+    border: none;
+    font-size: 25px;
+  }
+  .inp:hover {
+    background-color:rgba(211, 205, 205, 0.2);
+  }
+  .inpContainer {
+    display: flex;
+    justify-content: center;
+  }

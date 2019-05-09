@@ -53,3 +53,5 @@ const question1 = () => {
         console.log('Floor:', floor)
     })
 }
+
+question1()

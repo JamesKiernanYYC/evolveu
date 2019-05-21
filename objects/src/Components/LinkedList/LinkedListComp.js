@@ -22,7 +22,7 @@ class LinkedListComp extends React.Component {
         } else if (event.target.id === "amt") {
             this.setState({amtInp: Number(event.target.value)})
             console.log("Ammount Field Changed")
-        } else if (this.state.ammount !== 0 && this.state.subject !== '' && event.target.id === "add") {
+        } else if (this.state.amtInp !== '' && this.state.subInp !== '' && event.target.id === "add") {
             this.list.initNode(this.state.subInp, this.state.amtInp)
             this.setState({
                 list: this.list,
@@ -32,10 +32,9 @@ class LinkedListComp extends React.Component {
                 display: <NodeComp 
                 show = {this.list.currentNode.show()}
                 firstClick = {this.list.moveToFirst()}
-                // lastClick = {this.list.lastNode()}
+                lastClick = {this.list.moveToLast()}
                 />
-            })
-            
+            })   
         } else {
             return(window.confirm("Please enter a subject and an ammount before submiting"))
         }

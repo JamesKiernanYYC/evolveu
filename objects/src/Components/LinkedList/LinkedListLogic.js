@@ -23,7 +23,7 @@ initNode(subject, ammount) {
         node = this.currentNode
         console.log("adding to the end of the list")
     //adding somewhere in the middle
-     } else if (this.currentNode.next ==! null && this.currentNode.prev !== null && this.currentNode !== null){
+     } else if (this.currentNode.next !== null && this.currentNode.prev !== null && this.currentNode !== null){
         let node = new Node(subject, ammount)
         node.next = this.currentNode.next
         node.prev = this.currentNode
@@ -34,6 +34,9 @@ initNode(subject, ammount) {
 }
 moveToFirst = () => {
     this.currentNode = this.head
+}
+moveToLast = () => {
+    this.currentNode = this.tail
 }
 
 }

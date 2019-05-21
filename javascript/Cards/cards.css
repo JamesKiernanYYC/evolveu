@@ -1,0 +1,48 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+.outer {
+    display: flex;
+    justify-content: center;
+}
+.rightSide {
+    background-color: white;
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+.cardContainer {
+    background-color: white;
+    border: 1px solid black;
+    width: 50%;
+    justify-content: center;
+    margin-right: 10px;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+}
+.cardsBtn {
+    
+    width: 90px;
+    height: 30px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.cardsBtn:hover {
+    cursor: pointer;
+}
+.cards {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 400px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

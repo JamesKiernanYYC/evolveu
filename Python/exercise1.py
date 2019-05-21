@@ -39,3 +39,4 @@ def tax_function(income):
         print(a)
         
 tax_function(300000)
+

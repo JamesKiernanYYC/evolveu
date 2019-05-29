@@ -1,14 +1,10 @@
 import { add, subtract, multiply, divide } from './CalculatorLogic'
 
-test('add', () => {
-    expect(add(10, 2)).toBe(12)
-})
-test('subtract', () => {
-    expect(subtract(10, 2)).toBe(8)
-})
-test('multiply', () => {
-    expect(multiply(10, 2)).toBe(20)
-})
-test('divide', () => {
-    expect(divide(10, 2)).toBe(5)
+test('Calculator Functionality', () => {
+    const a = 15
+    const b = 5
+    expect(add(a,b)).toBe(a + b)
+    expect(subtract(a, b)).toBe(a - b)
+    expect(multiply(a, b)).toBe(a * b)
+    expect(divide(a, b)).toBe(a / b)
 })

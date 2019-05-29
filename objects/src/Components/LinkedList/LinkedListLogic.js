@@ -1,43 +1,78 @@
 import Node from './NodeLogic'
 
-class LinkedList {
-constructor() {
-   this.head = null
-   this.tail = null
-   this.currentNode = null
-}
-initNode(subject, ammount) {
-    //adding to the list when the list is empty
-    if(this.head === null) {
-        let node = new Node(subject, ammount)
-        node.next = node.prev = null 
-        this.head = this.tail = this.currentNode = node
-        console.log("adding to empty list")
-    //adding to the end of the list
-    } else if (this.currentNode.next === null && this.currentNode !== null) {
-        let node = new Node(subject, ammount)
-        node.next = null
-        node.prev = this.currentNode
-        this.currentNode.next = node
-        this.tail = node
-        node = this.currentNode
-        console.log("adding to the end of the list")
-    //adding somewhere in the middle
-     } else if (this.currentNode.next !== null && this.currentNode.prev !== null && this.currentNode !== null){
-        let node = new Node(subject, ammount)
-        node.next = this.currentNode.next
-        node.prev = this.currentNode
-        this.currentNode.next = node
-        this.currentNode = node
-        console.log("adding in the middle of the list after current")
-    }
-}
-moveToFirst = () => {
-    this.currentNode = this.head
-}
-moveToLast = () => {
-    this.currentNode = this.tail
-}
+class LinkedList{
+	constructor(){
+		this.head = null
+		this.currentNode = null
+	}
+
+	getFirst () {
+		let node = this.head
+		return this.currentNode = node
+	}
+
+	getLast () {
+		let node = this.head
+		while (node) {
+			if(node.forwardNode === null){
+				return this.currentNode = node
+			}
+			node = node.forwardNode
+		}
+	}
+    getNext () {
+        if(this.currentNode.forwardNode === null){
+        return this.currentNode
+        }
+        return this.currentNode = this.currentNode.forwardNode
+	}
+
+	getPrevious () {
+		let node = this.head
+		if(node === this.currentNode){
+			return node
+		}
+		while (node) {
+			if (this.currentNode === node.forwardNode){
+				return this.currentNode = node
+			}
+			node = node.forwardNode
+		}
+	}
+
+	insertNode (subject, amount) {
+		if(this.head === null){
+			let newNode = new Node(subject, amount)
+			newNode.forwardNode = null
+			this.head = newNode
+			this.currentNode = newNode
+			return this.head
+		}
+		else{
+			let newNode = new Node(subject, amount)
+			newNode.forwardNode = this.currentNode.forwardNode
+			this.currentNode.forwardNode = newNode
+			this.currentNode = newNode
+			return newNode
+		}
+	}
+
+	deleteNode () {
+		if(this.head.forwardNode === null){
+			return this.head = null
+		}
+		if(this.head === this.currentNode){
+			this.head = this.head.forwardNode
+			return this.currentNode = this.head
+		}
+		else{
+			let previousNode = this.getPrevious()
+			previousNode.forwardNode = this.currentNode.forwardNode.forwardNode
+			this.currentNode = previousNode
+			return this.currentNode
+	}
+	}
 
 }
+
 export default LinkedList

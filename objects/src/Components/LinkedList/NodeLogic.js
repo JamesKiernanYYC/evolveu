@@ -1,12 +1,15 @@
-class Node {
-    constructor(subject, ammount, next, prev) {
-        this.subject = subject
-        this.ammount = ammount
-        this.next = next
-        this.prev = prev
-    }
-    show = () => {
-        return `${this.subject}, ${this.ammount}`
-    }
+class Node{
+	constructor(subject, amount, forwardNode = null){
+		this.subject = subject
+		this.amount = amount 
+		this.forwardNode = forwardNode
+	}
+
+	show () {
+		return(
+		`${this.subject} ${this.amount}`
+		)
+	}
 }
+
 export default Node

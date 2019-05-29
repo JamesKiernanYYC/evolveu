@@ -11,7 +11,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      display: <Calculator />
+      display: <LinkedListComp />
     }
   }
   // Click handler method for changing the "display" state or the view on the page

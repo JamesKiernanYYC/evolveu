@@ -1,0 +1,12 @@
+Invoice #: 2
+Client ID: 2277
+Date: 2019-07-04 00:00:00
+Client Name: Brown Cheryl
+-----------------------------------------
+Invoiced Items on Order:
+Shirt --- $50.0 x 5 => $250.0
+Socks --- $15.0 x 6 => $90.0
+Pants --- $70.0 x 3 => $210.0
+Hat --- $20.0 x 2 => $40.0
+-----------------------------------------
+Invoice Total: $590.0

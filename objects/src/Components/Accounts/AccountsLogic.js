@@ -18,11 +18,11 @@ class Accounts {
    }
    findHighest() {
     this.highest = this.accountsArray.reduce((prev, current) => (prev.balance > current.balance) ? prev : current)
-    return this.highest.name
+    return `${this.highest.name}, $${this.highest.balance}`
     }
    findLowest() {
     this.lowest = this.accountsArray.reduce((prev, current) => (prev.balance < current.balance) ? prev : current)
-    return this.lowest.name
+    return `${this.lowest.name}, $${this.lowest.balance}`
     }
 }
 export default Accounts

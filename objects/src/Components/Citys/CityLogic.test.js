@@ -1,4 +1,4 @@
-import City from './City'
+import City from './CityLogic'
 
 test('City Class', () => {
     const testCity = new City("Calgary", 100 , 100, 1000000)
@@ -22,5 +22,5 @@ test('show', () => {
 })
 test('whichSphere', () => {
     const testCity = new City("Calgary", 80 , 80, 1000000)
-    expect(testCity.whichSphere()).toBe("Northern Hemisphere")
+    expect(testCity.whichSphere()).toBe("Northern")
 })

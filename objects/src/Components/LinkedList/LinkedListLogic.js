@@ -46,7 +46,7 @@ class LinkedList{
 			newNode.forwardNode = null
 			this.head = newNode
 			this.currentNode = newNode
-			return this.head
+			return newNode
 		}
 		else{
 			let newNode = new Node(subject, amount)

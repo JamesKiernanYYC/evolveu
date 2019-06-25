@@ -1,0 +1,22 @@
+.dropMenuBox {
+    height: 100px;
+    width: 200px;;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100 !important;
+    border-right: 1px solid black;
+}
+.menuBtn {
+    background-color: gray;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 50%;
+    width: 100%;
+    text-align: left;
+}
+.menuBtn:hover {
+    background-color: lightgray;
+    padding-left: 10px;
+}

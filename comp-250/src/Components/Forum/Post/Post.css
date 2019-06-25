@@ -1,0 +1,24 @@
+.postBox {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+.responseBar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.postTitle {
+    text-align: center;
+}
+.postHeader {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    justify-content: space-evenly;
+}

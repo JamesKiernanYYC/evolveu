@@ -1,0 +1,10 @@
+.forumMain {
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 99;
+}

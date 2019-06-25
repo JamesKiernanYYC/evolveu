@@ -7,7 +7,7 @@ class Node{
 
 	show () {
 		return(
-		`${this.subject} ${this.amount}`
+		`Subject: ${this.subject}, Ammount: ${this.amount}`
 		)
 	}
 }

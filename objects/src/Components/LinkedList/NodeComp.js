@@ -35,7 +35,7 @@ render() {
                 Delete Node
                 </button>
             </div>
-            <h3>{`Current Node:  ${this.props.list.currentNode}`}</h3>
+            <h3>{`Current Node: ${this.props.node}`}</h3>
             
 
         </div>

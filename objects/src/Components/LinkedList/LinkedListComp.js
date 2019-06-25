@@ -10,28 +10,46 @@ class LinkedListComp extends React.Component {
         this.state = {
             amtInp:'',
             subInp:'',
-            list: this.list 
+            currentNode : this.list.currentNode,
+            list: this.list
         }
     }
-    onClick (event) {
+    onChange = (event) => {
+        if (event.target.id === 'subInp') {
+            this.setState({subInp:event.target.value})
+        } else if (event.target.id === 'amtInp') {
+            this.setState({amtInp:event.target.value})
+        }
+    }
+    onClick = (event) => {
         if (event.target.id === 'addNode') {
             this.list.insertNode(this.state.subInp, this.state.amtInp)
-            this.setState({list: this.list})
+            this.setState({
+                list: this.list,
+                amtInp: '',
+                subInp: ''
+            })
+            console.log(this.list.currentNode.show())
         }
+    }
+    showNode = () => {
+        if (this.state.currentNode === null) {
+            return 'No Nodes'
+        } else return this.state.currentNode.show()
     }
     render(){
 		return(
         <div>
             <div>
-                <input xttype='text' placeholder="Subject"/>
-                <input type='text' placeholder="Ammount" />
+                <input id='subInp' type='text' placeholder="Subject" onChange={this.onChange} value={this.state.subInp}/>
+                <input id='amtInp' type='text' placeholder="Ammount" onChange={this.onChange} value={this.state.amtInp}/>
                 <button id="addNode" onClick={this.onClick}>Add Node</button>
             </div>
-            <duv>
+            <div>
                 <NodeComp 
-                list = {this.state.list}
+                    node = {this.showNode()}
                 />
-            </duv>
+            </div>
         </div>
         )
     }
